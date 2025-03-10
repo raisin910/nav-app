@@ -36,7 +36,8 @@ const NavAppPreview = () => {
   const [startLocationName, setStartLocationName] = useState<string>('');
   const [endLocationName, setEndLocationName] = useState<string>('');
 
-  const GOOGLE_MAPS_API_KEY = 'AIzaSyBfOE--43i1IKCjJB9534ew3a_KCpdYGoo';
+// 直接記述していたAPIキーを環境変数に置き換え
+const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
 
   // NavAppPreviewコンポーネント内でgetCurrentLocation関数を修正
 const getCurrentLocation = () => {
