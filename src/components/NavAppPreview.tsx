@@ -78,7 +78,6 @@ const NavAppPreview = () => {
       <div className="space-y-4">
         <div className="relative">
           <MapComponent 
-            apiKey={GOOGLE_MAPS_API_KEY} 
             currentLocation={currentPosition || startLocation}
             destinationLocation={endLocation}
             walkingSpeed={walkingSpeed}
@@ -284,7 +283,6 @@ const NavAppPreview = () => {
       <div className="space-y-4">
         <div className="relative">
           <MapComponent 
-            apiKey={GOOGLE_MAPS_API_KEY} 
             currentLocation={currentPosition || startLocation}
             destinationLocation={endLocation}
             walkingSpeed={walkingSpeed * (selectedPaceOption?.speedMultiplier || 1)}
